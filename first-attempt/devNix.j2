@@ -11,6 +11,9 @@
   env = {};
   idx = {
     workspace = {
+      onCreate = {
+        initial-build = "./gradlew assembleDebug";
+      };
       onStart = {
         wait-for-adb = "adb -s emulator-5554 wait-for-device";
       };
